@@ -33,7 +33,7 @@ Valid product types are [apm, browser and mobile](https://docs.newrelic.com/docs
 
 |Method|Description|Parameters|
 |---|---|---|
-|`get($type)`|Get a list of usage metrics for the account|`$type`: string, one of [apm, browser, mobile]|
+|`get($type)`|Get a list of usage metrics for the account|`$type`: optional, string, one of [apm, browser, mobile], optional if already set via `productType()`|
 
 ### Options
 
