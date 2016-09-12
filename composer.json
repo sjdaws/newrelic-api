@@ -1,0 +1,31 @@
+{
+    "name": "sjdaws/newrelic-api",
+    "description": "PHP wrapper for New Relic API v2",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["new relic", "api"],
+    "authors": [
+        {
+            "name": "Scott Dawson",
+            "email": "scott@sjdaws.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "monolog/monolog": "~1.0"
+    },
+    "support": {
+        "issues": "https://github.com/sjdaws/newrelic-api/issues",
+        "source": "https://github.com/sjdaws/newrelic-api"
+    },
+    "autoload": {
+        "psr-0": {
+            "Sjdaws\\NewRelicApi": "src/"
+        },
+        "psr-4": {
+            "Sjdaws\\NewRelicApi\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
