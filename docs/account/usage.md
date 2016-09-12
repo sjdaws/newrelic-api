@@ -1,10 +1,11 @@
 # Account/Usage
 
-[Back to readme](https://github.com/sjdaws/newrelic-api/blob/master/readme.md)
+<sup>[Back to readme](https://github.com/sjdaws/newrelic-api/blob/master/readme.md)</sup>
 
 ## Documentation
 
 - [Usage](#usage)
+- [Methods](#methods)
 - [Options](#options)
 - [Response](#response)
 
@@ -27,6 +28,12 @@ $usage = $client->get('apm');
 ```
 
 Valid product types are [apm, browser and mobile](https://docs.newrelic.com/docs/apis/rest-api-v2/account-examples-v2/retrieving-account-usage-metrics-rest-api#product_names).
+
+### Methods
+
+|Method|Description|Parameters|
+|---|---|---|
+|`get($type)`|Get a list of usage metrics for the account|`$type`: string, one of [apm, browser, mobile]|
 
 ### Options
 

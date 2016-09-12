@@ -1,10 +1,11 @@
 # Account/Users
 
-[Back to readme](https://github.com/sjdaws/newrelic-api/blob/master/readme.md)
+<sup>[Back to readme](https://github.com/sjdaws/newrelic-api/blob/master/readme.md)</sup>
 
 ## Documentation
 
 - [Usage](#usage)
+- [Methods](#methods)
 - [Options](#options)
 - [Response](#response)
 
@@ -20,6 +21,12 @@ $apiKey = 'thisisnotrealyouwillneedanapikey';
 $client = new Sjdaws\NewRelicApi\Account\Users($apiKey);
 $users = $client->get();
 ```
+
+### Methods
+
+|Method|Description|Parameters|
+|---|---|---|
+|`get()`|Get a list of users with access to the account||
 
 ### Options
 
