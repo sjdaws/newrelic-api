@@ -8,6 +8,7 @@
 - [Options](#methods)
 - [Options](#options)
 - [Response](#response)
+- [Errors](#errors)
 
 ### Usage
 
