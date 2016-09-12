@@ -110,6 +110,35 @@ abstract class Resource
     }
 
     /**
+     * Check if an integer is valid and positive
+     *
+     * @param  string      $name
+     * @param  integer     $integer
+     * @param  boolean     $positive
+     * @throws Exception
+     * @return boolean
+     */
+    protected function checkInteger($name, $integer, $positive = true)
+    {
+        $error = false;
+
+        if (!is_integer($integer)) {
+            $error = gettype($integer);
+        }
+
+        if ($positive && $integer <= 0) {
+            $error = $integer;
+        }
+
+        if ($error) {
+            $type = $positive ? 'a positive' : 'an';
+            $this->throwException('Invalid ' . $name . ' specified: ' . $error . '. ' . ucfirst($name) . ' must be ' . $type . ' integer.');
+        }
+
+        return true;
+    }
+
+    /**
      * Convert most date/times to a timestamp
      *
      * @param  mixed  $date

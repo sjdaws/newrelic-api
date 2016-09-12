@@ -67,3 +67,4 @@ $users = $client->filter('ids', [123, 456])->get();
 |---|---|
 |Account|[Usage metrics](https://github.com/sjdaws/newrelic-api/blob/master/docs/account/usage.md)|
 |Account|[Listing users for your account](https://github.com/sjdaws/newrelic-api/blob/master/docs/account/users.md)|
+|Application|[Recording deployments](https://github.com/sjdaws/newrelic-api/blob/master/docs/application/deployments.md)|
